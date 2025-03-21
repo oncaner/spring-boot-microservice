@@ -7,7 +7,9 @@ public class RestApis {
 
     public static final String VERSIONS = "/v1";
 
-    public static final String AUTH_SERVICE = DEVELOPER + VERSIONS + "auth";
+    public static final String AUTH_SERVICE = DEVELOPER + VERSIONS + "/auth";
     public static final String REGISTER = "/register";
     public static final String LOGIN = "/login";
+
+    public static final String CREATE_USER = "/create-user";
 }
