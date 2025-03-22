@@ -1,7 +1,8 @@
-server:
-  port: 9091
-
 spring:
-  data:
-    mongodb:
-      uri: mongodb://caner:12345@localhost:27017/UserProfile
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: user-application # yml file

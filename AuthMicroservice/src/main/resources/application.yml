@@ -1,13 +1,8 @@
-server:
-  port: 9090
-
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5433/AuthDB
-    username: postgres
-    password: 12345
-    driver-class-name: org.postgresql.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: auth-application # yml file
