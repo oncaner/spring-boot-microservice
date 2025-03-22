@@ -32,4 +32,10 @@ public class UserProfileController {
         return ResponseEntity.ok(userProfileService.getAllUsers());
     }
 
+    @GetMapping("/upper-name")
+    public ResponseEntity<String> upperName(@RequestParam String name){
+
+        return ResponseEntity.ok(userProfileService.upperName(name));
+    }
+
 }

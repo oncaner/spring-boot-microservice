@@ -10,4 +10,6 @@ public interface UserProfileService {
     void createUser(CreateUserRequest request);
 
     List<UserProfile> getAllUsers();
+
+    String upperName(String name);
 }
